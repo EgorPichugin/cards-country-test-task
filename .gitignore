@@ -1,0 +1,23 @@
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+.vs/
+
+# Rider
+.idea/
+
+# dotnet tools
+.config/
+
+# Runtime data
+files/terminals.json
+
+# Environment overrides
+appsettings.*.json
+!appsettings.Development.json
+.env
+
