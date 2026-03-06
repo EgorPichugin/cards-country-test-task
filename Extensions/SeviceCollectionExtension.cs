@@ -9,7 +9,7 @@ public static class ServiceCollectionExtension
     {
         services.AddDbContext<DellinDictionaryDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
-
+        services.AddSingleton<TerminalJsonMapper>();
         services.AddHostedService<TerminalImportService>();
         return services;
     }
